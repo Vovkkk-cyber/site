@@ -55,13 +55,6 @@ a {
   border-color: #fff;
 }
 
-.header input::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.8);
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-}
-
 .header input::placeholder {
   color: rgba(255, 255, 255, 0.8);
   font-family: "Montserrat", sans-serif;
@@ -76,7 +69,7 @@ a {
   position: relative;
 }
 .menu_form {
-  gap: 16px;
+  gap: 32px;
 }
 .menu__link {
   font-size: 16px;
@@ -90,22 +83,20 @@ a {
 .menu-mob {
   display: none;
 }
-.menu-form__form {
+.menu-form {
   position: absolute;
   width: 477px;
   background-color: #fff;
   top: calc(100% + 18px);
   right: 0;
-  display: flex;
-  flex-direction: column;
   box-shadow: 0px 4px 67px -12px rgba(0, 0, 0, 0.32);
   padding: 40px 48px;
-  z-index: 1;
   opacity: 0;
+  z-index: 1;
 }
-.menu-form__form:hover {
-  transition-duration: 1s;
-  opacity: 1;
+.menu-form__form {
+  display: flex;
+  flex-direction: column;
 }
 .menu-form__item {
   border-top: 0.5px solid rgb(202, 205, 216);
@@ -164,14 +155,12 @@ a {
   border: 0;
   border-radius: 6px;
   text-align: center;
-  background-image: url(img/Vector\ 11.jpg), url(img/Vector\ 11\ \(1\).jpg);
+  background-image: url(img/Vector\ 11.svg), url(img/Vector\ 11\ \(1\).svg);
   background-position: right;
-  background-position-x: calc(100% - 14px);
-  background-position-y: calc(100% - 26px), calc(100% - 15px);
+  background-position-x: calc(100% - 15px);
+  background-position-y: calc(100% - 30px), calc(100% - 15px);
   background-repeat: no-repeat;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 .menu-form__total {
   display: flex;
@@ -199,6 +188,11 @@ a {
 .menu-form__button:hover {
   background-color: #000;
   color: #fff;
+}
+
+.menu__link_active:hover + .menu-form {
+  transition-duration: 1s;
+  opacity: 1;
 }
 
 .top-content {
@@ -413,10 +407,10 @@ a {
   fill: black;
 }
 .footer__input {
-  height: 41px;
-  width: 288px;
+  height: 40px;
+  width: 260px;
   border-radius: 16px;
-  border: 1px, solid, rgb(196, 196, 196) 0;
+  border: 1px, solid, rgb(196, 196, 196);
   box-sizing: border-box;
   background-color: #fff;
   padding-left: 17px;
@@ -466,8 +460,8 @@ a {
   border: 1px solid transparent;
   box-sizing: border-box;
   border-radius: 16px;
-  width: 275px;
-  height: 46px;
+  width: 260px;
+  height: 40px;
   font-size: 12px;
   line-height: 18px;
   color: #000;
@@ -478,13 +472,6 @@ a {
 .button:hover {
   background-color: #000;
   color: #fff;
-}
-
-.footer input::-moz-placeholder {
-  color: rgb(196, 196, 196);
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 12px;
 }
 
 .footer input::placeholder {
@@ -585,14 +572,12 @@ a {
   border: 0;
   border-radius: 6px;
   text-align: center;
-  background-image: url(img/Vector\ 11.jpg), url(img/Vector\ 11\ \(1\).jpg);
+  background-image: url(img/Vector\ 11.svg), url(img/Vector\ 11\ \(1\).svg);
   background-position: right;
-  background-position-x: calc(100% - 14px);
-  background-position-y: calc(100% - 26px), calc(100% - 15px);
+  background-position-x: calc(100% - 15px);
+  background-position-y: calc(100% - 30px), calc(100% - 15px);
   background-repeat: no-repeat;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 .cart__form {
   height: 556px;
@@ -630,13 +615,6 @@ a {
   border: 0px;
   border-bottom: 1px solid rgb(202, 205, 216);
   background: transparent;
-}
-.cart__input::-moz-placeholder {
-  font-family: "Montserrat", sans-serif;
-  text-decoration: none;
-  font-weight: 400;
-  font-size: 14px;
-  color: rgb(0, 0, 0);
 }
 .cart__input::placeholder {
   font-family: "Montserrat", sans-serif;
@@ -1051,9 +1029,7 @@ a {
   background-position: right;
   background-position-x: calc(100% - 22px);
   background-repeat: no-repeat;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   cursor: pointer;
 }
 
@@ -1090,8 +1066,7 @@ a {
     right: -235px;
   }
   .section {
-    -moz-column-gap: 29px;
-         column-gap: 29px;
+    column-gap: 29px;
     row-gap: 39px;
   }
   .footer__title {
@@ -1266,8 +1241,7 @@ a {
   .footer {
     justify-content: center;
     padding-bottom: 32px;
-    -moz-column-gap: 100px;
-         column-gap: 100px;
+    column-gap: 100px;
     row-gap: 69px;
     margin-top: 32px;
   }
