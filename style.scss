@@ -1,0 +1,487 @@
+*{
+    margin:0;
+    padding: 0;
+}
+@import 'variables';
+a{
+    text-decoration: none;
+}
+.body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+.top {
+    height: 735px;
+    background-image: url(img/topback.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.header{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.8);
+    &__input {
+        height: 41px;
+        width: 288px;
+        border-radius: 20px;
+        border: 1px, solid, rgba(255, 255, 255, 0.8);
+        box-sizing: border-box;
+        background-color: transparent;
+        padding-left: 32px;
+        padding-right: 32px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: $color-text;
+    }
+    
+}
+.header input:focus {
+            border-color: #fff;
+        }
+.header input::placeholder {
+    color: $color-text;
+    font-family:"Montserrat", sans-serif;
+    font-weight: 400 ;
+    font-size: 16px;
+}
+
+.menu {
+    display: flex;
+    gap: 32px;
+    list-style-type: none;
+    position: relative;
+    &_form {
+        gap: 16px;
+    }
+    &__link {
+        font-size: 16px;
+        line-height: 20px;
+        color: $color-text;
+        text-align: left;
+        
+    }
+    &__link:hover{
+        text-decoration: underline;
+}
+    &-mob {
+        display: none;
+    }
+    &-form {
+
+    &__form {
+        position: absolute;
+        width: 477px;
+        background-color: #fff;
+        top: calc(100% + 18px);
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 4px 67px -12px rgba(0, 0, 0, 0.32);
+        padding: 40px 48px;
+        z-index: 1;
+        opacity: 0;
+        &:hover {
+            transition-duration: 1s;
+            opacity: 1;
+        }
+    }
+    &__item {
+        border-top: 0.5px solid rgba(202, 205, 216, 1);
+        padding-top: 24px;
+        padding-bottom: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__left {
+        display: flex;
+        gap: 24px;
+        width: 358px;
+        height: 144px;
+    }
+    &__info {
+        width: 169px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    &__title {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000;
+        width: 190px;
+    }
+    &__text {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: #000;
+    }
+    &__link-box {
+        margin-top: 54px;
+        display: flex;
+        gap: 30px;
+    }
+    &__link {
+        font-family: "Montserrat", sans-serif;
+        text-decoration: underline;
+        font-weight: 400;
+        font-size: 14px;
+        color: #000;
+    }
+    &__link:hover {
+        text-decoration: none;
+        color: rgba(136, 136, 136, 1);
+    }
+    &__number {
+        height: 51px;
+        width: 71px;
+        background-color: rgba(247, 246, 246, 1);
+        border: 0;
+        border-radius: 6px;
+        text-align: center;
+        background-image: url(img/Vector\ 11.jpg), url(img/Vector\ 11\ \(1\).jpg);
+        background-position: right ;
+        background-position-x: calc(100% - 14px );
+        background-position-y: calc(100% - 26px ), calc(100% - 15px );
+        background-repeat: no-repeat ;
+        appearance: none;
+        
+    }
+    &__total {
+        display: flex;
+
+    }
+    &__sell {
+        font-family: "Montserrat", sans-serif;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 24px;
+        width: 100%;
+        text-align: center;
+    }
+    &__button {
+        background: transparent;
+        border: 1px solid rgba(4, 4, 4, 1);
+        box-sizing: border-box;
+        border-radius: 20px;
+        height: 41px;
+        width: 290px;
+         font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        line-height: 100%;
+        cursor: pointer;
+        &:hover {
+            background-color: #000;
+            color: #fff;
+    }
+}    
+}
+}
+
+
+    
+
+.top-content{
+    color: $color-text;
+    max-width: 792px;
+    &__title{
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 70px;
+        margin-top: 64px;
+        margin-bottom: 16px;
+    }
+    &__text{
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 16px;
+        margin-top: 16px;
+    }
+    &__link {
+        font-size: 16px;
+        line-height: 24px;
+        color: $color-text;
+    }
+    &__link:hover{
+        text-decoration: underline;
+    }
+}
+
+.for-box {
+    padding-top: 64px;
+    padding-bottom: 32px;
+    &__title{
+    width: 100%;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+    color: black;
+    padding-bottom: 32px;
+    }
+}
+.for {
+    display: grid;
+    gap: 34px;
+    grid-template-columns: repeat(12, 1fr);
+    &__item {
+        height: 415px;
+        grid-column: span 4;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 41px;
+        color: $color-text;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__item_big {
+        grid-column: span 6;
+    }
+    &__item_1 {
+        background-image: url(img/for-1.jpg)
+    }
+    &__item_2 {
+        background-image: url(img/for-2.jpg)
+    }
+    &__item_3 {
+        background-image: url(img/for-3.jpg)
+    }
+    &__item_4 {
+        background-image: url(img/for-4.jpg)
+    }
+    &__item_5 {
+        background-image: url(img/for-5.jpg)
+    }
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    &-title{
+    width: 100%;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+    color: black;
+    }
+    &__title {
+        display: none;
+    }
+}
+.product {
+    width: 378px;
+    position: relative;
+    &__img {
+        width: 100%;
+    }
+    
+    &__icon {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        top: 10px;
+        right: 55px;
+        opacity: 0;
+        cursor: pointer;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    &__like {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        top: 10px;
+        right: 10px;
+        opacity: 0;
+        cursor: pointer;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    
+    &__title {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: black;
+        margin-top: 10px;
+        margin-bottom: 9px;
+    }
+    &__text {
+        font-size: 14px;
+        line-height: 17px;
+        color: $color;
+        margin-bottom: 12px;
+    }
+    &__box-price {
+        display: flex;
+        gap: 32px;
+    }
+    &__price{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: #050505;
+    }
+    &__price_sale{
+        text-decoration-line: line-through;
+        color: $color;
+    }
+    
+}
+
+.link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    color: rgba(0, 0, 0, 1);
+    &:hover {
+        text-decoration-line: none;
+        color: rgba(136, 136, 136, 1);
+    }
+}
+
+.footer {
+    margin-top: 64px;
+    padding-top: 32px;
+    background-color: rgba(247, 246, 246, 1);
+    min-height: 207px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    &__title {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 100%;
+        color: #000;
+    }
+    &__menu{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000;
+    }
+    &__contact{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000;
+    }
+    &__text{
+        font-size: 12px;
+        line-height: 16px;
+        color: #000;
+    }
+    &__link{
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 18px;
+        color: $color;
+        
+    }
+    &__link:hover{
+        text-decoration: underline;
+        color: #000;
+    }
+    &__icon:hover path {
+        fill: black;
+    }
+    &__input {
+        height: 41px;
+        width: 288px;
+        border-radius: 16px;
+        border: 1px, solid, rgba(196, 196, 196, 1)0;
+        box-sizing: border-box;
+        background-color: #fff;
+        padding-left: 17px;
+        padding-right: 17px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        color: rgba(196, 196, 196, 1);
+    }
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.nav {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    gap: 12px;
+    &__link{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color:$color;
+    }
+    &__link:hover{
+        text-decoration: underline;
+        color: #000;
+    }
+    
+}
+.footer-link {
+    display: flex;
+    gap: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.button{
+    background: rgba(222, 215, 215, 0.41);
+    border: 1px solid transparent; 
+    box-sizing: border-box;
+    border-radius: 16px;
+    width: 275px;
+    height: 46px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000;
+    font-family:"Montserrat", sans-serif;
+    font-weight: 400 ;
+    cursor: pointer;
+    &:hover {
+        background-color: #000;
+        color: #fff;
+    }
+}
+.footer input::placeholder {
+    color: rgba(196, 196, 196, 1);
+    font-family:"Montserrat", sans-serif;
+    font-weight: 400 ;
+    font-size: 12px;
+
+}
+@import 'cart';
+@import 'catal';
+@import 'table';
+@import 'moblie';
